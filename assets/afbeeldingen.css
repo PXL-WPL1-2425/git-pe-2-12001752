@@ -1,0 +1,30 @@
+/* Basisstijl voor de header */
+.header-section {
+    position: relative;
+    height: 100vh; /* Volledige hoogte van de viewport */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Witte tekstkleur voor de header-content */
+    text-align: center;
+}
+
+/* De video vult de volledige achtergrond */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorgt ervoor dat de video de hele ruimte vult zonder uitgerekt te worden */
+    z-index: -1; /* Plaatst de video achter de content */
+}
+
+/* Content bovenop de video */
+.header-content {
+    z-index: 1; /* Zorgt ervoor dat de tekst boven de video komt */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Halftransparante zwarte achtergrond om de tekst leesbaar te maken */
+    border-radius: 10px; /* Optioneel, afgeronde hoeken voor de content-box */
+}
